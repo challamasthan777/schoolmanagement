@@ -1,0 +1,179 @@
+.card {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: none;
+  }
+  
+  
+  .breadcrumb {
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .student-info {
+    max-height: 580px; /* Set a fixed height for the container */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    white-space: nowrap; /* Prevent text wrapping */
+  }
+  
+  .student-info::-webkit-scrollbar {
+    height: 6px; /* Set the height of the horizontal scrollbar */
+    background-color: #f1f1f1;
+  }
+  
+  .student-info::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 3px;
+  }
+  
+  .student-info::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  /* All Exam Results table */
+  .table-responsive {
+    max-height: 1000px; /* Set a fixed height for the container */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+  }
+  
+  .table-responsive::-webkit-scrollbar {
+    height: 6px; /* Set the height of the horizontal scrollbar */
+    background-color: #f1f1f1;
+  }
+  
+  .table-responsive::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 3px;
+  }
+  
+  .table-responsive::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  
+  .table th, .table td {
+    vertical-align: middle;
+  }
+  
+  .btn-warning {
+    background-color: #ffa500;
+    border-color: #ffa500;
+    color: white;
+  }
+  
+  .bg-light {
+    background-color: #f8f9fa !important;
+  }
+
+  .card-1{
+    height: 650px !important;
+    width: auto;
+  }
+
+
+  .card {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  .attendance-chart {
+    height: 245px;
+    width: 200px;
+    margin: 0 auto;
+  }
+  
+  .attendance-legend {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .attendance-legend.absent {
+    background-color: #4169e1;
+  }
+  
+  .attendance-legend.present {
+    background-color: #ffa500;
+  }
+  
+  .btn-danger {
+    background-color: #ff1493;
+    border-color: #ff1493;
+  }
+  
+  .table th, .table td {
+    text-align: center;
+  }
+  
+  .notifications-list {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+  
+  .notification-item {
+    margin-bottom: 15px;
+  }
+  
+  .notification-date {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  
+  .notification-content p {
+    margin-bottom: 0;
+  }
+  
+  .notification-content small {
+    color: #6c757d;
+  }
+  
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  
+  /* Custom scrollbar styles */
+  .notifications-list::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .notifications-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .notifications-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+  }
+  
+  .notifications-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+
+  .scroll-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #02274e;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .scroll-to-top i {
+    font-size: 20px;
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #0056b3;
+  }

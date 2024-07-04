@@ -1,0 +1,119 @@
+.rounded-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.card-1{
+  height: 600px !important;
+}
+
+
+
+
+.table-responsive {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+
+  .btn-warning {
+    background-color: #ffa500;
+    border-color: #ffa500;
+    color: white;
+  }
+
+  .btn-danger {
+    background-color: #ff1493;
+    border-color: #ff1493;
+  }
+  
+  .table th, .table td {
+    text-align: center;
+  }
+  
+  .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-body {
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+  
+  .notifications-list {
+    max-height: 600px;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+  
+  .notification-item {
+    margin-bottom: 15px;
+  }
+  
+  .notification-date {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  
+  .notification-content p {
+    margin-bottom: 0;
+  }
+  
+  .notification-content small {
+    color: #6c757d;
+  }
+  
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  
+  /* Custom scrollbar styles */
+  .notifications-list::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .notifications-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .notifications-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+  }
+  
+  .notifications-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .scroll-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #02274e;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .scroll-to-top i {
+    font-size: 20px;
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #0056b3;
+  }
+
+  

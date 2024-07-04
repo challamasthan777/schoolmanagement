@@ -1,0 +1,97 @@
+<div class="wrapper">
+  <aside id="sidebar" [ngClass]="{'expand': isExpanded}">
+      <div class="d-flex logo">
+        <div class="sidebar-logo">
+            <a href="#">Rafee_Challa</a>
+        </div>
+        <button class="toggle-btn" (click)="toggleSidebar()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <ul class="sidebar-nav">
+          <li class="sidebar-item">
+              <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                  data-bs-target="#Dashboard" aria-expanded="false" aria-controls="Dashboard">
+                  <i class="lni lni-dashboard icon"></i>
+                    <span>Dashboard</span>
+              </a>
+              <ul id="Dashboard" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                  <li class="sidebar-item">
+                    <a routerLink="/admin" class="sidebar-link">Admin</a>
+                  </li>
+                  <li class="sidebar-item">
+                      <a routerLink = "/student" class="sidebar-link">Students</a>
+                  </li>
+                  <li class="sidebar-item">
+                    <a routerLink ="/parents" class="sidebar-link">Parents</a>
+                </li>
+                <li class="sidebar-item">
+                  <a routerLink ="/teachers" class="sidebar-link">Teachers</a>
+              </li>
+              </ul>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                data-bs-target="#Students" aria-expanded="false" aria-controls="Students">
+                <i class="fa-solid fa-children"></i>
+                 <span>Students</span>
+            </a>
+            <ul id="Students" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">All Students</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Student Details</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">Admission Form</a>
+              </li>
+              <li class="sidebar-item">
+                <a href="#" class="sidebar-link">Student Details</a>
+            </li>
+            </ul>
+        </li>
+          <!-- <li class="sidebar-item">
+              <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                  data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
+                  <i class="lni lni-layout"></i>
+                  <span>Multi Level</span>
+              </a>
+              <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                  <li class="sidebar-item">
+                      <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse"
+                          data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two">
+                          Two Links
+                      </a>
+                      <ul id="multi-two" class="sidebar-dropdown list-unstyled collapse">
+                          <li class="sidebar-item">
+                              <a href="#" class="sidebar-link">Link 1</a>
+                          </li>
+                          <li class="sidebar-item">
+                              <a href="#" class="sidebar-link">Link 2</a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </li> -->
+          <li class="sidebar-item">
+              <a href="#" class="sidebar-link">
+                  <i class="lni lni-popup"></i>
+                  <span>Notification</span>
+              </a>
+          </li>
+          <li class="sidebar-item">
+              <a href="#" class="sidebar-link">
+                  <i class="lni lni-cog"></i>
+                  <span>Setting</span>
+              </a>
+          </li>
+      </ul>
+      <div class="sidebar-footer">
+          <a href="#" class="sidebar-link">
+              <i class="lni lni-exit"></i>
+              <span>Logout</span>
+          </a>
+      </div>
+  </aside>
+</div>

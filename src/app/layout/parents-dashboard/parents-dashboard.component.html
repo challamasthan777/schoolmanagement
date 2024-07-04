@@ -1,0 +1,245 @@
+<div class="container-fluid">
+
+  <h1 class="mb-2">Admin Dashboard</h1>
+  <div class="breadcrumb mb-4">
+    <span class="text-muted">Home</span> &gt; <span class="text-warning">Parents</span>
+  </div>
+
+    <div class="row mb-4">
+      <div class="col-md-3">
+        <div class="card bg-white">
+          <div class="card-body d-flex justify-content-between align-items-center">
+
+            <div class="rounded-circle bg-light-danger p-3">
+              <i class="bi bi-cash text-danger fa-2x"></i>
+              </div>
+            <div>
+              <h6 class="card-subtitle mb-1 text-muted">Due Fees</h6>
+              <h2 class="card-title mb-0">$4503</h2>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card bg-white">
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <div class="rounded-circle bg-light-primary p-3">
+                <i class="bi bi-clipboard-check text-info fa-2x"></i>
+            </div>
+            <div>
+              <h6 class="card-subtitle mb-1 text-muted">Notifications</h6>
+              <h2 class="card-title mb-0">63</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card bg-white">
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <div class="rounded-circle bg-light-success p-3">
+                <i class="bi bi-mortarboard text-success fa-2x"></i>
+            </div>
+            <div>
+              <h6 class="card-subtitle mb-1 text-muted">Results</h6>
+              <h2 class="card-title mb-0">94%</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card bg-white">
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <div class="rounded-circle bg-light-info p-3">
+                <i class="bi bi-cash-stack text-warning fa-2x"></i>
+            </div>
+            <div>
+              <h6 class="card-subtitle mb-1 text-muted">Expenses</h6>
+              <h2 class="card-title mb-0">94%</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4 d-flex">
+      <div class="col-md-4 flex-grow-1">
+        <div class="card h-100">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <h5 class="card-title m-0">My kids</h5>
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+          <div class="card-body">
+            <div *ngFor="let kid of kids" class="mb-5 mt-5 d-flex align-items-center">
+              <div class="me-3">
+                <img *ngIf="kid.gender === 'Male'" src="../../../assets/male.webp" class="rounded-circle" width="50" height="50" />
+                <img *ngIf="kid.gender === 'Female'" src="../../../assets/female.webp" class="rounded-circle" width="50" height="50" />
+              </div>
+              <div>
+                <h6 class="mb-0">Name: {{ kid.name }}</h6>
+                <small class="text-muted">Gender: {{ kid.gender }}</small><br>
+                <small class="text-muted">Class: {{ kid.class }}</small><br>
+                <small class="text-muted">Roll: {{ kid.roll }}</small><br>
+                <small class="text-muted">Section: {{ kid.section }}</small><br>
+                <small class="text-muted">Admission Id: {{ kid.admissionId }}</small><br>
+                <small class="text-muted">Admission Date: {{ kid.admissionDate }}</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-8 flex-grow-1">
+          <div class="card h-100">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h5 class="card-title m-0">All Expenses</h5>
+                <i class="fas fa-ellipsis-v"></i>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-3">
+                  <input type="text" class="form-control" placeholder="Search by Exam">
+                </div>
+                <div class="col-md-3">
+                  <input type="text" class="form-control" placeholder="Search by Subject">
+                </div>
+                <div class="col-md-3">
+                  <input type="date" class="form-control">
+                </div>
+                <div class="col-md-3">
+                  <button class="btn btn-warning w-100">SEARCH</button>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive" style="max-height: 400px; overflow-y: auto;">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th><input type="checkbox"></th>
+                        <th>ID</th>
+                        <th>Expanse</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th>E-Mail</th>
+                        <th>Date</th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let expense of expenses">
+                        <td><input type="checkbox"></td>
+                        <td>{{ expense.id }}</td>
+                        <td>{{ expense.type }}</td>
+                        <td>{{ expense.amount | currency }}</td>
+                        <td><span [class]="'badge ' + (expense.status === 'Paid' ? 'bg-success' : 'bg-danger')">{{ expense.status }}</span></td>
+                        <td>{{ expense.email }}</td>
+                        <td>{{ expense.date }}</td>
+                        <td>
+                          <div class="dropdown">
+                            <button class="btn btn-link" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                              ...
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <li><a class="dropdown-item" href="#">Close</a></li>
+                              <li><a class="dropdown-item" href="#">Edit</a></li>
+                              <li><a class="dropdown-item" href="#">Refresh</a></li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+          </div>
+        </div>
+       </div>
+    </div>
+
+    <div class="row mt-4 d-flex">
+      <div class="col-md-4 flex-grow-1">
+        <div class="card h-100">
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h5 class="card-title">Notifications</h5>
+              <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <div class="notifications-list">
+              <div *ngFor="let notification of notifications" class="notification-item">
+                <div class="notification-date" [style.background-color]="notification.color">
+                  {{notification.date}}
+                </div>
+                <div class="notification-content">
+                  <p>{{notification.message}}</p>
+                  <small *ngIf="notification.author">{{notification.author}} / {{notification.time}}</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     <div class="col-md-8 flex-grow-1">
+      <div class="card h-100">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="card-title m-0">All Exam Results</h5>
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-3">
+              <input type="text" class="form-control" placeholder="Search by Exam">
+            </div>
+            <div class="col-md-3">
+              <input type="text" class="form-control" placeholder="Search by Subject">
+            </div>
+            <div class="col-md-3">
+              <input type="date" class="form-control">
+            </div>
+            <div class="col-md-3">
+              <button class="btn btn-warning w-100">SEARCH</button>
+            </div>
+          </div>
+          <div class="table-responsive" style="max-height: 400px; overflow-y: auto;">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th><input type="checkbox"></th>
+                  <th>ID</th>
+                  <th>Exam Name</th>
+                  <th>Subject</th>
+                  <th>Grade</th>
+                  <th>Percent</th>
+                  <th>Date</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let result of examResults">
+                  <td><input type="checkbox"></td>
+                  <td>{{result.id}}</td>
+                  <td>{{result.name}}</td>
+                  <td>{{result.subject}}</td>
+                  <td>{{result.grade}}</td>
+                  <td>{{result.percent}}</td>
+                  <td>{{result.date}}</td>
+                  <td><i class="fas fa-ellipsis-v"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <nav aria-label="Page navigation" class="mt-3">
+            <ul class="pagination justify-content-end">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item active"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <button (click)="scrollToTop()" class="scroll-to-top" [ngClass]="{'show-scrollTop': windowScrolled}">
+    <i class="fa-solid fa-angle-up"></i>
+  </button>
+  
+</div>

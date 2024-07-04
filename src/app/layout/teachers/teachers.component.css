@@ -1,0 +1,107 @@
+.bg-light-purple { background-color: #f3e5f5; }
+.bg-light-blue { background-color: #e3f2fd; }
+.bg-light-yellow { background-color: #fff8e1; }
+.bg-light-red { background-color: #ffebee; }
+
+.card {
+  border: none;
+  border-radius: 10px;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.equal-height-cards {
+    display: flex;
+}
+
+.notifications-list {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+  
+  .notification-item {
+    margin-bottom: 15px;
+  }
+  
+  .notification-date {
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+  
+  .notification-content p {
+    margin-bottom: 0;
+  }
+  
+  .notification-content small {
+    color: #6c757d;
+  }
+  
+  .cursor-pointer {
+    cursor: pointer;
+  }
+  
+  /* Custom scrollbar styles */
+  .notifications-list::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .notifications-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .notifications-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+  }
+  
+  .notifications-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  /* student-list.component.css */
+.table th, .table td {
+    vertical-align: middle;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .dropdown-menu {
+    min-width: 120px;
+  }
+  
+  .dropdown-item i {
+    margin-right: 8px;
+  }
+  
+  .pagination {
+    margin-bottom: 0;
+  }
+
+  .scroll-to-top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #02274e;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .scroll-to-top i {
+    font-size: 20px;
+  }
+  
+  .scroll-to-top:hover {
+    background-color: #0056b3;
+  }
