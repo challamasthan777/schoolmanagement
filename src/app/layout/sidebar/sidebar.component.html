@@ -30,7 +30,7 @@
               </li>
               </ul>
           </li>
-          <li class="sidebar-item">
+        <li class="sidebar-item">
             <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
                 data-bs-target="#Students" aria-expanded="false" aria-controls="Students">
                 <i class="fa-solid fa-children"></i>
@@ -38,19 +38,105 @@
             </a>
             <ul id="Students" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">All Students</a>
+                    <a routerLink ="/allstudents" class="sidebar-link">All Students</a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">Student Details</a>
+                    <a routerLink ="/studentdetails" class="sidebar-link">Student Details</a>
                 </li>
                 <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Admission Form</a>
+                  <a routerLink ="/admission" class="sidebar-link">Admission Form</a>
               </li>
               <li class="sidebar-item">
-                <a href="#" class="sidebar-link">Student Details</a>
+                <a routerLink ="/studentpromotion" class="sidebar-link">Student Details</a>
             </li>
             </ul>
         </li>
+
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                data-bs-target="#Teachers" aria-expanded="false" aria-controls="Teachers">
+                <i class="fa-solid fa-person-chalkboard"></i>
+                 <span>Teachers</span>
+            </a>
+            <ul id="Teachers" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                <li class="sidebar-item">
+                    <a routerLink ="/allteachers" class="sidebar-link">All Teachers</a>
+                </li>
+                <li class="sidebar-item">
+                    <a routerLink ="/teacherdetails" class="sidebar-link">Teacher Details</a>
+                </li>
+                <li class="sidebar-item">
+                  <a routerLink ="/addteacher" class="sidebar-link">Add Teacher</a>
+              </li>
+              <li class="sidebar-item">
+                <a routerLink ="/payment" class="sidebar-link">Payment</a>
+            </li>
+            </ul>
+        </li>
+
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                data-bs-target="#Parents" aria-expanded="false" aria-controls="parents">
+                <i class="fa-solid fa-hands-holding-child"></i>
+                <span>Parents</span>
+            </a>
+            <ul id="Parents" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                <li class="sidebar-item">
+                    <a routerLink ="/allparent" class="sidebar-link">All Parents</a>
+                </li>
+                <li class="sidebar-item">
+                    <a routerLink ="/parentdetails" class="sidebar-link">Parents Details</a>
+                </li>
+                <li class="sidebar-item">
+                  <a routerLink ="/addparent" class="sidebar-link">Add Parent</a>
+              </li>
+            </ul>
+        </li>
+
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                data-bs-target="#Library" aria-expanded="false" aria-controls="Library">
+                <i class="fa-solid fa-book"></i>
+                 <span>Library</span>
+            </a>
+            <ul id="Library" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                <li class="sidebar-item">
+                    <a routerLink ="/allbooks" class="sidebar-link">All Books</a>
+                </li>
+                <li class="sidebar-item">
+                    <a routerLink ="/addnewbook" class="sidebar-link">Add New Book</a>
+                </li>
+
+            </ul>
+        </li>
+
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                data-bs-target="#Acconunt" aria-expanded="false" aria-controls="Acconunt">
+                <i class="fa-solid fa-file-invoice"></i>
+                 <span>Acconunt</span>
+            </a>
+            <ul id="Acconunt" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                <li class="sidebar-item">
+                    <a routerLink ="/allfeescollection" class="sidebar-link">All Fees Collection</a>
+                </li>
+                <li class="sidebar-item">
+                    <a routerLink ="/expenses" class="sidebar-link">Expenses</a>
+                </li>
+                <li class="sidebar-item">
+                    <a routerLink ="/addexpenses" class="sidebar-link">Add Expenses</a>
+                </li>
+
+            </ul>
+        </li>
+
+
+
+
+
+
+
+
           <!-- <li class="sidebar-item">
               <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
                   data-bs-target="#multi" aria-expanded="false" aria-controls="multi">

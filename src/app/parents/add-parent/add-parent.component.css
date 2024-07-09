@@ -1,0 +1,60 @@
+/* add-student.component.css */
+.card {
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 40px;
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-label {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.3rem;
+  }
+  
+  .form-control, .form-select {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+  }
+  
+  .btn-warning {
+    padding: 7px 40px 7px 40px;
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #000;
+  }
+  
+  .btn-dark {
+    padding: 7px 40px 7px 40px;
+    background-color: #343a40;
+    border-color: #343a40;
+  }
+  
+  /* Custom styles for file input */
+  input[type="file"] {
+    font-size: 0.9rem;
+  }
+ 
+  .btn-warning:hover{
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+  }
+
+  .btn-dark:hover{
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #fff;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .row > div {
+      margin-bottom: 1rem;
+    }
+  }

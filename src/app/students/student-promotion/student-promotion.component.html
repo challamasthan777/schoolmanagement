@@ -1,0 +1,68 @@
+<div class="container-fluid">
+    <h3 class="mb-2">Students</h3>
+    <div class="breadcrumb mb-4">
+      <span class="text-muted">Home</span> &gt; <span class="text-warning">Student Promotion</span>
+    </div>
+
+    <div class="card" style="width: 95%; margin-left: 30px;">
+        <div class="card-body">
+          <h5 class="card-title">Student Promotion</h5>
+          <div class="row g-3">
+            <div class="col-md-3">
+              <label for="currentSession" class="form-label">Current Session *</label>
+              <select class="form-select" id="currentSession">
+                <option selected>2017-2018</option>
+                <!-- Add more options as needed -->
+              </select>
+            </div>
+            
+            <div class="col-md-3">
+              <label for="promoteSession" class="form-label">Promote Session *</label>
+              <select class="form-select" id="promoteSession">
+                <option selected>2017-2018</option>
+                <!-- Add more options as needed -->
+              </select>
+            </div>
+            
+            <div class="col-md-3">
+                <label for="promotionFromClass" class="form-label">Promotion From Class *</label>
+                <div class="dropdown" (click)="toggleDropdown('promotionFromClass')">
+                    <input type="text" class="form-control" id="promotionFromClass" placeholder="Please Select *" readonly #dropdownInput>
+                    <div class="dropdown-menu" [ngClass]="{ 'show': isDropdownOpen('promotionFromClass') }">
+                    <div class="dropdown-item">Please Select *</div>
+                    <div class="dropdown-item">Play</div>
+                    <div class="dropdown-item">Nursery</div>
+                    <div class="dropdown-item">One</div>
+                    <div class="dropdown-item">Two</div>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <label for="promotionToClass" class="form-label">Promotion To Class *</label>
+                <div class="dropdown" (click)="toggleDropdown('promotionToClass')">
+                    <input type="text" class="form-control" id="promotionToClass" placeholder="Please Select *" readonly #dropdownInput>
+                    <div class="dropdown-menu" [ngClass]="{ 'show': isDropdownOpen('promotionToClass') }">
+                    <div class="dropdown-item">Please Select *</div>
+                    <div class="dropdown-item">Play</div>
+                    <div class="dropdown-item">Nursery</div>
+                    <div class="dropdown-item">One</div>
+                    <div class="dropdown-item">Two</div>
+                  </div>
+                </div>
+              </div>
+              
+              
+            <div class="col-12 mt-4">
+                <button type="submit" class="btn btn-warning me-2">Save</button>
+                <button type="reset" class="btn btn-dark">Reset</button>
+              </div>
+          </div>
+        </div>
+
+
+    </div>
+
+    
+
+</div>

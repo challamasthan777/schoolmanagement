@@ -1,0 +1,94 @@
+
+<div class="container-fluid mt-4">
+    <h3 class="mb-2">Parents</h3>
+    <div class="breadcrumb mb-4">
+      <span class="text-muted">Home</span> &gt; <span class="text-warning">Parent Details</span>
+    </div>
+    <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">About Me</h5>
+          <div class="row mt-4">
+            <div class="col-md-3">
+              <div class="profile-image">
+                <img src="../../../assets/parent-image.png" alt="Jessia Rose" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-md-9">
+              <h4>{{profile.name}}</h4>
+              <p class="text-muted">{{profile.description}}</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <table class="table table-borderless">
+                    <tr>
+                      <td><strong>Name:</strong></td>
+                      <td>{{profile.name}}</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Gender:</strong></td>
+                      <td>{{profile.gender}}</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Father Name:</strong></td>
+                      <td>{{profile.fatherName}}</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Mother Name:</strong></td>
+                      <td>{{profile.motherName}}</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Date Of Birth:</strong></td>
+                      <td>{{profile.dateOfBirth}}</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Religion:</strong></td>
+                      <td>{{profile.religion}}</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Father Occupation:</strong></td>
+                      <td>{{profile.fatherOccupation}}</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="col-md-6">
+                  <table class="table table-borderless">
+                    <tr>
+                      <td><strong>E-mail:</strong></td>
+                      <td>{{profile.email}}</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Admission Date:</strong></td>
+                      <td>{{profile.admissionDate}}</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Class:</strong></td>
+                      <td>{{profile.class}}</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Section:</strong></td>
+                      <td>{{profile.section}}</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Roll:</strong></td>
+                      <td>{{profile.roll}}</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Address:</strong></td>
+                      <td>{{profile.address}}</td>
+                    </tr>
+                    <tr>
+                      <td><strong>Phone:</strong></td>
+                      <td>{{profile.phone}}</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer text-end">
+          <button class="btn btn-link"><i class="fas fa-edit"></i></button>
+          <button class="btn btn-link"><i class="fas fa-print"></i></button>
+          <button class="btn btn-link"><i class="fas fa-download"></i></button>
+        </div>
+    </div>
+</div>
